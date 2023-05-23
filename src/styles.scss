@@ -6,7 +6,7 @@ html {
   background-color: var(--primary-color);
 }
 main {
-  max-width: rem-calc(600)rem;
+  max-width: calc(600 / 16)+rem;
   margin: 0 auto;
   box-sizing: border-box;
 }

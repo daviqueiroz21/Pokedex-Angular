@@ -1,0 +1,33 @@
+@import '../../../config-scss/variable.scss';
+
+:host{
+  form{
+    max-width: calc(600 / 16)+rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: calc(15/16)+rem calc(20/16)+rem;
+    background-color: rgba(255, 255,255, 0.20 );
+
+    border-radius: 10px;
+    input{
+      width: 95%;
+
+      font-size: 15px;
+      font-weight: 100;
+
+      background:none;
+      border: none;
+      outline: none;
+      color: var(--branco);
+
+
+      &::placeholder{
+        color: var(--branco);
+      }
+    }
+  }
+}
