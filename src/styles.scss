@@ -1,14 +1,12 @@
-@use './config-scss/reset.scss';
-@use './config-scss/variable.scss';
-@use './config-scss/rem-calc.scss';
-
+@import './config-scss/reset.scss';
+@import './config-scss/variable.scss';
 
 html {
   font-family: roboto;
   background-color: var(--primary-color);
 }
 main {
-  max-width: rem-calc(600);
+  max-width: rem-calc(600)rem;
   margin: 0 auto;
   box-sizing: border-box;
 }
