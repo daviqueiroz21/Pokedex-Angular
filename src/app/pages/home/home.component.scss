@@ -2,4 +2,10 @@
   max-width: calc(600 / 16)+rem;
   margin: 0 auto;
 
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
