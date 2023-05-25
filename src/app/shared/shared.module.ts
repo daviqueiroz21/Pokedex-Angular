@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { PokeHeaderComponent } from './poke-header/poke-header.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
 import { PokeSearchComponent } from './poke-search/poke-search.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,12 @@ import { PokeSearchComponent } from './poke-search/poke-search.component';
   exports: [
     PokeHeaderComponent,
     PokeSearchComponent,
-    PokeListComponent
+    PokeListComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }

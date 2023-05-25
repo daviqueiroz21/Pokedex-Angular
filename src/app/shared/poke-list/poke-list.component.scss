@@ -4,22 +4,24 @@
 $padding: calc(20/16)+rem;
 
 
+:host{
 
-:host {
+.listagem {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
   margin-top: rem-calc(10);
-  width: 50%;
+  width: 100%;
   min-width: 270px;
 
   .pokemon{
     position: relative;
 
     display: flex;
-    width: 83%;
+    width: 40%;
+    margin: 5px;
     justify-content: space-between;
 
     height: rem-calc(100);
@@ -75,10 +77,12 @@ $padding: calc(20/16)+rem;
       background-size:contain;
 
       img {
+        width: rem-calc(60);
         position: absolute;
-        top: $padding;
-        left: $padding;
+        right: $padding;
+        bottom: 10px;
       }
     }
   }
+}
 }
